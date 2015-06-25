@@ -1,0 +1,36 @@
+# Site settings
+title: FLA
+email: ehs@pobox.com
+description: > 
+  Foreign Literatures in America (FLA) is a project devoted to the 
+  recovery and understanding of the significance of foreign authored 
+  literary works, as well as immigrant authored literary works, in 
+  the U.S. throughout U.S. history.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+collections:
+  authors:
+    output: true
+  clippings:
+    output: true
+
+exclude: ['**/*.tif']
+
+sass:
+  sass_dir: bower_components/bootstrap-sass/assets/stylesheets
+  style: compressed
+
+markdown: kramdown
+
+wikidata:
+  image: true
+  summary: true
+  claims:
+    P18: "image"
+    P27: "country"
+    P569: "birth"
+    P570: "death"
+    P735: "firstname"
+    P734: "lastname"
+

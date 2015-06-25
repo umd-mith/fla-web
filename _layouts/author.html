@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<h3>{{ page.name }}</h3>
+
+<div>
+
+  <p class="summary">
+  {{ page.summary }}
+  </p>
+
+  <img src="{{ page.image }}">
+
+  <ul>
+    {% for clipping in site.clippings %}
+      {% for subject in clipping.subjects %}
+        {% if page.label == subject %}
+        <li><a href="{{ clipping.url }}">{{ clipping.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+
+</div>

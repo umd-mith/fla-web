@@ -1,0 +1,15 @@
+---
+layout: page
+title: Authors
+---
+  <div class="grid effect-3" id="author-grid">
+    {% for author in site.authors %}
+    {% if author.url != "/authors/index.html" and author.image %}
+    <div class="grid-item">
+      <a href="{{ author.url }}">
+        <img width="200" src="/authors/{{ author.slug }}/{{ author.image }}" title="{{ author.label }}" alt="{{ author.label }}">
+      </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
