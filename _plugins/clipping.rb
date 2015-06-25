@@ -63,7 +63,6 @@ module Clipping
 end
 
 """
-
 Notes for OCR generation...
 
 tiff = '/data/fla/data/_clippings/01323/001.tif'
@@ -71,16 +70,7 @@ tiff = '/data/fla/data/_clippings/01323/001.tif'
 e = Tesseract::Engine.new {|e|
   e.language = :eng
   e.blacklist = '|'
-  e.set 'hocr', true
 }
 
 puts e.text_for(tiff).strip
-
-image = VIPS::Image.new(tiff)
-image.write('001.png')
-
-d = [image.x_size, image.y_size].max
-shrink = d / 250
-image.shrink(shrink).write('/data/fla/data/_site/001-thumb.png')
-
 """
