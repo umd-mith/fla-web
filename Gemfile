@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'ruby-vips'
+gem 'mini_magick'
 gem 'tesseract-ocr'
 gem 'jekyll', '~> 3.0.0pre.beta'
 

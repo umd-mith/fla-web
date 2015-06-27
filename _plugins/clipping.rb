@@ -1,6 +1,6 @@
-require 'vips'
 require 'jekyll'
 require 'tesseract'
+require "mini_magick"
 
 #
 # sudo apt-get install libleptonica-dev libtesseract-dev
@@ -19,7 +19,6 @@ module Clipping
       new_files = []
       for clipping in site.collections['clippings'].docs
         new_files += process clipping
-        break
       end
       for file in new_files 
         coll.docs << Jekyll::Document.new(file, {site: site, collection: coll})
@@ -40,10 +39,11 @@ module Clipping
 
     def make_pngs(tiff)
       new_files = []
-      image = VIPS::Image.new(tiff)
+      image = MiniMagick::Image.open tiff
 
       png = tiff.sub '.tif', '.png'
       if not File.exist? png
+        image.format "png"
         image.write png
         new_files << png
         puts "generated #{png} from #{tiff}"
@@ -51,8 +51,8 @@ module Clipping
 
       thumb = tiff.sub '.tif', '-thumb.png'
       if not File.exist? thumb
-        shrink = [image.x_size, image.y_size].max / 250
-        image.shrink(shrink).write(thumb)
+        image.resize "400x400"
+        image.write thumb
         new_files << thumb
         puts "generated #{thumb} from #{tiff}"
       end
