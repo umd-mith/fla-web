@@ -1,9 +1,10 @@
-<footer>
-</footer>
+  <footer>
+  </footer>
 
-<script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-<script src="{{ site.baseurl }}/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
-<script src="{{ site.baseurl }}/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="{{ site.baseurl }}/bower_components/modernizr/modernizr.js"></script>
-<script src="{{ site.baseurl }}/js/app.js"></script>
+  <script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+  {% if page.javascript %}
+  {% for js_file in page.javascript %}
+  <script src="{{ js_file }}"></script>
+  {% endfor %}
+  {% endif %}
