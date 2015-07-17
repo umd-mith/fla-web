@@ -1,15 +1,27 @@
 ---
-layout: default
+layout: page
 ---
-<h3>{{ page.name }}</h3>
 
-<div>
+<div class="row">
 
+  <div class="col-sm-offset-1 col-sm-5">
+  <img class="thumbnail img-responsive center-block" src="{{ page.image }}">
+  </div>
+
+  <div class="col-md-5">
+  <h3>{{ page.name }}</h3>
   <p class="summary">
   {{ page.summary }}
   </p>
+  </div>
 
-  <img src="{{ page.image }}">
+</div>
+
+<div class="row">
+
+  <div class="col-md-offset-1 col-md-10">
+
+  <h3>Selected Resources:</h3>
 
   <ul>
     {% for clipping in site.clippings %}
@@ -20,5 +32,7 @@ layout: default
       {% endfor %}
     {% endfor %}
   </ul>
+
+  </div>
 
 </div>

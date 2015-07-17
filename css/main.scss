@@ -3,4 +3,41 @@
 ---
 @charset "utf-8";
 
+$font-size-base: 12pt;
+
 @import "bootstrap";
+
+// center images in the masonry grid
+
+.grid {
+    margin: 0 auto;
+}
+
+// a bit of padding in masonry images
+
+.grid-item img {
+    margin-bottom: 10px;
+}
+
+// clipping preview
+
+.clipping {
+    clear: both;
+    border: thin solid #999;
+    padding: 10px;
+    min-height: 230px;
+}
+
+.clipping img {
+    height: 200px;
+    float: left;
+    margin: 0px 10px 0px 10px;
+}
+
+.window-manifest-title {
+    font-size: 10pt;
+}
+
+.
+
+
