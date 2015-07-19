@@ -15,8 +15,9 @@ $(function() {
     ],
     "windowObjects": [
       {
-        "loadedManifest": manifestUri,
+        "loadedManifest": manifestUri, 
         "viewType" : "ImageView", 
+        "availableViews": ["ThumbnailView", "ImageView", "BookView"]
       }
     ]
   });

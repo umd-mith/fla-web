@@ -4,35 +4,23 @@ layout: page
 
 <div class="row">
 
-  <div class="col-sm-offset-1 col-sm-5">
-  <img class="thumbnail img-responsive center-block" src="{{ page.image }}">
+  <div class="col-sm-6 col-sm-offset-1">
+
+    <h3>{{ page.name }}</h3>
+    <p class="summary">
+    {{ page.summary }}
+    </p>
+
+    <h3>Resources</h3>
+
+    <ul>
+      {% for clipping in site.clippings %}{% for subject in clipping.subjects %}{% if page.label == subject %}<li>{% include preview.html clipping=clipping %}</li>{% endif %}{% endfor %}{% endfor %}
+    </ul>
+
   </div>
 
-  <div class="col-md-5">
-  <h3>{{ page.name }}</h3>
-  <p class="summary">
-  {{ page.summary }}
-  </p>
-  </div>
-
-</div>
-
-<div class="row">
-
-  <div class="col-md-offset-1 col-md-10">
-
-  <h3>Selected Resources:</h3>
-
-  <ul>
-    {% for clipping in site.clippings %}
-      {% for subject in clipping.subjects %}
-        {% if page.label == subject %}
-        <li><a href="{{ clipping.url }}">{{ clipping.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-  </ul>
-
+  <div class="col-sm-3">
+  <img class="thumbnail img-responsive" src="{{ page.image }}">
   </div>
 
 </div>

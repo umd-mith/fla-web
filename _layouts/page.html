@@ -14,7 +14,13 @@ layout: default
       <ul class="nav navbar-nav">
 
         <li class="dropdown">
-          <a href="/authors/">Authors</a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Authors <span class="caret"></span></a>
+          <ul class="dropdown-menu scrollable-menu">
+            <li><a href="/authors/">All</a></li>
+            {% for author in site.authors %}
+            <li><a href="{{ author.url }}">{{ author.name }}</a></li>
+            {% endfor %}
+          </ul>
         </li>
 
         <li class="dropdown">

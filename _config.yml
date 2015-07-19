@@ -15,7 +15,7 @@ collections:
   clippings:
     output: true
 
-exclude: ['**/*.tif']
+exclude: ['**/*.tif', '_clippings/*.jpg']
 
 sass:
   sass_dir: bower_components/bootstrap-sass/assets/stylesheets

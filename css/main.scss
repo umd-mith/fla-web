@@ -34,10 +34,16 @@ $font-size-base: 12pt;
     margin: 0px 10px 0px 10px;
 }
 
-.window-manifest-title {
-    font-size: 10pt;
+.manifest-info {
+    font-size: 11pt;
 }
 
-.
+.window-manifest-title {
+    font-size: 11pt;
+}
 
-
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
