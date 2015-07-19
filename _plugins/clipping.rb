@@ -8,12 +8,13 @@ module Clipping
     def generate(site)
       coll = site.collections['clippings']
       new_files = []
+
       count = 0
       for clipping in site.collections['clippings'].docs
         count += 1
         #break if count >= 579
-        new_files += process clipping
       end
+
       for file in new_files 
         coll.docs << Jekyll::Document.new(file, {site: site, collection: coll})
       end
@@ -139,21 +140,4 @@ module Clipping
       return thumbnail_url
     end
   end
-
-  class Tag < Liquid::Tag
-    
-    def initialize(tag_name, text, tokens)
-      super
-      @text = text
-    end
-
-    def render(context)
-      "#{text} #{Time.now}"
-    end
-
-  end
-
 end
-
-Liquid::Template.register_tag('clipping', Clipping::Tag)
-
