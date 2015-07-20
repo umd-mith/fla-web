@@ -1,0 +1,43 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00307/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "PLAYS AND PLAYERS",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00307/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6299,
+          "width": 1041,
+          "thumbnail": "001/full/130,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00307/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00307/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00307/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6299,
+                "width": 1041
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

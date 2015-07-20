@@ -1,0 +1,17 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00433/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Conrad in the \"Remembrance\" of a Collaborator",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+
+      ]
+    }
+  ]
+}

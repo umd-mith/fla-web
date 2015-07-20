@@ -1,0 +1,97 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00590/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "The Conrad Who Sat For Me",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00590/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6114,
+          "width": 4458,
+          "thumbnail": "001/full/139,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00590/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00590/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00590/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6114,
+                "width": 4458
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00590/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6348,
+          "width": 4494,
+          "thumbnail": "002/full/140,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00590/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00590/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00590/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6348,
+                "width": 4494
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00590/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 6306,
+          "width": 4548,
+          "thumbnail": "003/full/142,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00590/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00590/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00590/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6306,
+                "width": 4548
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

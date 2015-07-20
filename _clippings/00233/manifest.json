@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00233/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "A GREAT IRISH PLAY AND SOME IRISHMEN",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00233/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6291,
+          "width": 4759,
+          "thumbnail": "001/full/149,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00233/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00233/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00233/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6291,
+                "width": 4759
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00233/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6267,
+          "width": 2101,
+          "thumbnail": "002/full/131,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00233/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00233/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00233/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6267,
+                "width": 2101
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

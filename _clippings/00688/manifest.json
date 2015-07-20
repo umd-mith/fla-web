@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00688/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Advertisement for 'Twixt Land and Sea",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00688/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 2322,
+          "width": 1656,
+          "thumbnail": "001/full/104,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00688/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00688/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00688/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 2322,
+                "width": 1656
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00688/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 5340,
+          "width": 4788,
+          "thumbnail": "002/full/150,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00688/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00688/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00688/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5340,
+                "width": 4788
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

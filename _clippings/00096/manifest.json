@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00096/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "MY PARTING WISH for THE WOMEN OF AMERICA",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00096/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5558,
+          "width": 3692,
+          "thumbnail": "001/full/115,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00096/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00096/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00096/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5558,
+                "width": 3692
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00096/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 5642,
+          "width": 3858,
+          "thumbnail": "002/full/121,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00096/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00096/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00096/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5642,
+                "width": 3858
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

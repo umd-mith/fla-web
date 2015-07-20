@@ -1,0 +1,124 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00004/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "The Poet Chesterton",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00004/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5737,
+          "width": 4018,
+          "thumbnail": "001/full/126,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00004/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00004/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00004/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5737,
+                "width": 4018
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00004/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6343,
+          "width": 5100,
+          "thumbnail": "002/full/159,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00004/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00004/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00004/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6343,
+                "width": 5100
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00004/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 5667,
+          "width": 3975,
+          "thumbnail": "003/full/124,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00004/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00004/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00004/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5667,
+                "width": 3975
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00004/004",
+          "@type": "sc:Canvas",
+          "label": "image 4",
+          "height": 5751,
+          "width": 4003,
+          "thumbnail": "004/full/125,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00004/004",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00004/004.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00004/004",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5751,
+                "width": 4003
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00535/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "A First Meeting With Joseph Conrad",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00535/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6600,
+          "width": 5100,
+          "thumbnail": "001/full/159,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00535/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00535/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00535/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6600,
+                "width": 5100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

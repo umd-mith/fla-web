@@ -1,0 +1,97 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00070/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "A SPANISH ESTIMATE OF KIPLING",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00070/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 4455,
+          "width": 3101,
+          "thumbnail": "001/full/194,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00070/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00070/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00070/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4455,
+                "width": 3101
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00070/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 4651,
+          "width": 3107,
+          "thumbnail": "002/full/194,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00070/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00070/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00070/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4651,
+                "width": 3107
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00070/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 4596,
+          "width": 3031,
+          "thumbnail": "003/full/189,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00070/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00070/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00070/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4596,
+                "width": 3031
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

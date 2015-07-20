@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00711/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "[Conrad's First Ship]",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00711/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 4302,
+          "width": 5934,
+          "thumbnail": "001/full/185,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00711/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00711/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00711/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4302,
+                "width": 5934
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00711/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 4422,
+          "width": 5958,
+          "thumbnail": "002/full/186,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00711/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00711/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00711/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4422,
+                "width": 5958
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00602/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Heart of Darkness Impossible Piece to Transfer to TV",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00602/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6282,
+          "width": 4440,
+          "thumbnail": "001/full/139,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00602/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00602/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00602/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6282,
+                "width": 4440
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00602/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 3300,
+          "width": 1149,
+          "thumbnail": "002/full/144,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00602/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00602/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00602/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 3300,
+                "width": 1149
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

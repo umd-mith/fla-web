@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00118/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "TAGORE'S PARTING MESSAGE TO THE WOMEN OF AMERICA",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00118/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5258,
+          "width": 3626,
+          "thumbnail": "001/full/113,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00118/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00118/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00118/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5258,
+                "width": 3626
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00118/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 5267,
+          "width": 3583,
+          "thumbnail": "002/full/112,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00118/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00118/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00118/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5267,
+                "width": 3583
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

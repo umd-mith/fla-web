@@ -1,0 +1,178 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00793/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Letter to Joseph Conrad",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00793/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6032,
+          "width": 4758,
+          "thumbnail": "001/full/149,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00793/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00793/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00793/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6032,
+                "width": 4758
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00793/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6048,
+          "width": 4534,
+          "thumbnail": "002/full/142,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00793/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00793/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00793/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6048,
+                "width": 4534
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00793/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 5968,
+          "width": 4622,
+          "thumbnail": "003/full/144,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00793/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00793/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00793/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5968,
+                "width": 4622
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00793/004",
+          "@type": "sc:Canvas",
+          "label": "image 4",
+          "height": 6072,
+          "width": 4606,
+          "thumbnail": "004/full/144,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00793/004",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00793/004.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00793/004",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6072,
+                "width": 4606
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00793/005",
+          "@type": "sc:Canvas",
+          "label": "image 5",
+          "height": 6088,
+          "width": 4662,
+          "thumbnail": "005/full/146,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00793/005",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00793/005.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00793/005",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6088,
+                "width": 4662
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00793/006",
+          "@type": "sc:Canvas",
+          "label": "image 6",
+          "height": 2128,
+          "width": 4366,
+          "thumbnail": "006/full/136,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00793/006",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00793/006.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00793/006",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 2128,
+                "width": 4366
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

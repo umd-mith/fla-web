@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00273/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "SYNGE, THE FIREBRAND",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00273/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6259,
+          "width": 1469,
+          "thumbnail": "001/full/184,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00273/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00273/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00273/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6259,
+                "width": 1469
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00273/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6274,
+          "width": 1061,
+          "thumbnail": "002/full/133,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00273/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00273/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00273/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6274,
+                "width": 1061
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

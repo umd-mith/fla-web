@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00248/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "An Irish Playwright",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00248/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6283,
+          "width": 3993,
+          "thumbnail": "001/full/125,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00248/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00248/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00248/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6283,
+                "width": 3993
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00248/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6273,
+          "width": 3967,
+          "thumbnail": "002/full/124,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00248/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00248/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00248/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6273,
+                "width": 3967
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

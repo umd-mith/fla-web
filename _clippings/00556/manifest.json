@@ -1,0 +1,43 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00556/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Joseph Conrad's Background",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00556/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6432,
+          "width": 5005,
+          "thumbnail": "001/full/156,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00556/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00556/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00556/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6432,
+                "width": 5005
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00405/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "ULYSSES, ORDER AND MYTH",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00405/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6284,
+          "width": 3782,
+          "thumbnail": "001/full/118,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00405/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00405/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00405/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6284,
+                "width": 3782
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00405/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6277,
+          "width": 3513,
+          "thumbnail": "002/full/110,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00405/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00405/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00405/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6277,
+                "width": 3513
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00405/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 6277,
+          "width": 3554,
+          "thumbnail": "003/full/111,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00405/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00405/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00405/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6277,
+                "width": 3554
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00405/004",
+          "@type": "sc:Canvas",
+          "label": "image 4",
+          "height": 5879,
+          "width": 4787,
+          "thumbnail": "004/full/150,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00405/004",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00405/004.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00405/004",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5879,
+                "width": 4787
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

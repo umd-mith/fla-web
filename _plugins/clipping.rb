@@ -12,7 +12,8 @@ module Clipping
       count = 0
       for clipping in site.collections['clippings'].docs
         count += 1
-        #break if count >= 579
+        break if count >= 824
+        process clipping
       end
 
       for file in new_files 

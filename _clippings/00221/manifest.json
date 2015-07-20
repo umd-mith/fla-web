@@ -1,0 +1,97 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00221/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "J. M. SYNGE AND HIS WORK",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00221/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 4791,
+          "width": 6273,
+          "thumbnail": "001/full/196,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00221/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00221/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00221/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4791,
+                "width": 6273
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00221/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6277,
+          "width": 4174,
+          "thumbnail": "002/full/130,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00221/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00221/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00221/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6277,
+                "width": 4174
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00221/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 6268,
+          "width": 4177,
+          "thumbnail": "003/full/131,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00221/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00221/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00221/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6268,
+                "width": 4177
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

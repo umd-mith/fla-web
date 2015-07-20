@@ -1,0 +1,124 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00715/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Detroit Symphony Orchestra 1918-1919",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00715/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5624,
+          "width": 3958,
+          "thumbnail": "001/full/124,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00715/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00715/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00715/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5624,
+                "width": 3958
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00715/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 5152,
+          "width": 3550,
+          "thumbnail": "002/full/111,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00715/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00715/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00715/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5152,
+                "width": 3550
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00715/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 5056,
+          "width": 3087,
+          "thumbnail": "003/full/193,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00715/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00715/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00715/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5056,
+                "width": 3087
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00715/004",
+          "@type": "sc:Canvas",
+          "label": "image 4",
+          "height": 4984,
+          "width": 3223,
+          "thumbnail": "004/full/101,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00715/004",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00715/004.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00715/004",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4984,
+                "width": 3223
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

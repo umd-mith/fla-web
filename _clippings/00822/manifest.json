@@ -1,0 +1,97 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00822/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Letter to Joseph Conrad",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00822/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5864,
+          "width": 4726,
+          "thumbnail": "001/full/148,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00822/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00822/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00822/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5864,
+                "width": 4726
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00822/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6016,
+          "width": 4654,
+          "thumbnail": "002/full/145,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00822/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00822/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00822/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6016,
+                "width": 4654
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00822/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 5584,
+          "width": 4270,
+          "thumbnail": "003/full/133,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00822/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00822/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00822/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5584,
+                "width": 4270
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

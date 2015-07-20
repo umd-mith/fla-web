@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00205/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "MR. WELLS'S GOD AS THE \"PROJECTION\" OF HIS OWN IMAGE",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00205/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5226,
+          "width": 3496,
+          "thumbnail": "001/full/109,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00205/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00205/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00205/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5226,
+                "width": 3496
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00205/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 5117,
+          "width": 3500,
+          "thumbnail": "002/full/109,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00205/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00205/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00205/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5117,
+                "width": 3500
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00063/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Munson, Arley. Kipling's India. Illustrated. Large 8vo, pp.xii-204. Garden City, N. Y.: Doubleday, Page & Co. $1.50 net.",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00063/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5681,
+          "width": 4018,
+          "thumbnail": "001/full/126,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00063/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00063/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00063/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5681,
+                "width": 4018
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

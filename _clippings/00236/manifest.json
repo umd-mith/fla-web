@@ -1,0 +1,178 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00236/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "MacDARAGH'S WIFE",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00236/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6289,
+          "width": 4172,
+          "thumbnail": "001/full/130,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00236/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00236/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00236/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6289,
+                "width": 4172
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00236/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6296,
+          "width": 4087,
+          "thumbnail": "002/full/128,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00236/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00236/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00236/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6296,
+                "width": 4087
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00236/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 6290,
+          "width": 4072,
+          "thumbnail": "003/full/127,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00236/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00236/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00236/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6290,
+                "width": 4072
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00236/004",
+          "@type": "sc:Canvas",
+          "label": "image 4",
+          "height": 6290,
+          "width": 4096,
+          "thumbnail": "004/full/256,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00236/004",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00236/004.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00236/004",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6290,
+                "width": 4096
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00236/005",
+          "@type": "sc:Canvas",
+          "label": "image 5",
+          "height": 6260,
+          "width": 4087,
+          "thumbnail": "005/full/128,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00236/005",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00236/005.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00236/005",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6260,
+                "width": 4087
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00236/006",
+          "@type": "sc:Canvas",
+          "label": "image 6",
+          "height": 6296,
+          "width": 4075,
+          "thumbnail": "006/full/127,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00236/006",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00236/006.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00236/006",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6296,
+                "width": 4075
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

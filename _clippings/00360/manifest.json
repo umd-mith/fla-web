@@ -1,0 +1,97 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00360/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "TEN POEMS",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00360/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5774,
+          "width": 4789,
+          "thumbnail": "001/full/150,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00360/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00360/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00360/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5774,
+                "width": 4789
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00360/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6262,
+          "width": 2853,
+          "thumbnail": "002/full/178,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00360/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00360/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00360/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6262,
+                "width": 2853
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00360/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 6274,
+          "width": 3033,
+          "thumbnail": "003/full/190,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00360/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00360/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00360/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6274,
+                "width": 3033
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

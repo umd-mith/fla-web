@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00055/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "KIPLING ON GERMAN \"KULTUR\"",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00055/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5836,
+          "width": 4116,
+          "thumbnail": "001/full/129,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00055/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00055/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00055/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5836,
+                "width": 4116
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00055/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 5779,
+          "width": 4172,
+          "thumbnail": "002/full/130,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00055/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00055/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00055/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5779,
+                "width": 4172
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

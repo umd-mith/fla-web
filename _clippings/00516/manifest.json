@@ -1,0 +1,124 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00516/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Joseph Conrad, 1907-",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00516/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 4574,
+          "width": 6352,
+          "thumbnail": "001/full/199,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00516/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00516/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00516/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4574,
+                "width": 6352
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00516/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 4584,
+          "width": 6324,
+          "thumbnail": "002/full/198,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00516/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00516/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00516/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4584,
+                "width": 6324
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00516/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 4614,
+          "width": 6208,
+          "thumbnail": "003/full/194,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00516/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00516/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00516/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4614,
+                "width": 6208
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00516/004",
+          "@type": "sc:Canvas",
+          "label": "image 4",
+          "height": 4392,
+          "width": 6258,
+          "thumbnail": "004/full/196,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00516/004",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00516/004.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00516/004",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4392,
+                "width": 6258
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00557/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Books More or Less Amusing",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00557/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5440,
+          "width": 3590,
+          "thumbnail": "001/full/112,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00557/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00557/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00557/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5440,
+                "width": 3590
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00557/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 5512,
+          "width": 3670,
+          "thumbnail": "002/full/459,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00557/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00557/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00557/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5512,
+                "width": 3670
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

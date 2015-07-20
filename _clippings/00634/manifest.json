@@ -1,0 +1,43 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00634/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "[Advertisement for Deep Sea Edition of Conrad]",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00634/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6072,
+          "width": 4092,
+          "thumbnail": "001/full/256,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00634/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00634/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00634/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6072,
+                "width": 4092
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

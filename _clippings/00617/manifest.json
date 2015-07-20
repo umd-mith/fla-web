@@ -1,0 +1,151 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00617/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Joseph Conrad: An Enigma Decoded",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00617/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5916,
+          "width": 4206,
+          "thumbnail": "001/full/131,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00617/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00617/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00617/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5916,
+                "width": 4206
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00617/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 2447,
+          "width": 1432,
+          "thumbnail": "002/full/179,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00617/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00617/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00617/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 2447,
+                "width": 1432
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00617/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 6192,
+          "width": 4236,
+          "thumbnail": "003/full/132,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00617/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00617/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00617/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6192,
+                "width": 4236
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00617/004",
+          "@type": "sc:Canvas",
+          "label": "image 4",
+          "height": 6390,
+          "width": 4698,
+          "thumbnail": "004/full/587,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00617/004",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00617/004.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00617/004",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6390,
+                "width": 4698
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00617/005",
+          "@type": "sc:Canvas",
+          "label": "image 5",
+          "height": 5364,
+          "width": 2358,
+          "thumbnail": "005/full/147,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00617/005",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00617/005.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00617/005",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5364,
+                "width": 2358
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

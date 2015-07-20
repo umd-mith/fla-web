@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00727/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Joseph Conrad's The Nigger of the Narcissus",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00727/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 3934,
+          "width": 5472,
+          "thumbnail": "001/full/684,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00727/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00727/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00727/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 3934,
+                "width": 5472
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00727/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 4182,
+          "width": 5904,
+          "thumbnail": "002/full/185,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00727/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00727/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00727/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4182,
+                "width": 5904
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

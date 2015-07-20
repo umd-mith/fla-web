@@ -1,0 +1,97 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00717/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Detroit Symphony Orchestra 1921-1922",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00717/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 5416,
+          "width": 3582,
+          "thumbnail": "001/full/112,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00717/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00717/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00717/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5416,
+                "width": 3582
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00717/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 4888,
+          "width": 3167,
+          "thumbnail": "002/full/198,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00717/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00717/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00717/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 4888,
+                "width": 3167
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00717/003",
+          "@type": "sc:Canvas",
+          "label": "image 3",
+          "height": 5008,
+          "width": 3183,
+          "thumbnail": "003/full/199,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00717/003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00717/003.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00717/003",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 5008,
+                "width": 3183
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

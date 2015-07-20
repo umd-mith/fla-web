@@ -1,0 +1,70 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/clippings/00270/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "SHAW AND HIS \"BOSWELL\"",
+  "attribution": "Foreign Literatures in America",
+  "sequences": [
+    {
+      "@id": "normal",
+      "@type": "sc:Sequence",
+      "label": "page order",
+      "canvases": [
+        {
+          "@id": "/clippings/00270/001",
+          "@type": "sc:Canvas",
+          "label": "image 1",
+          "height": 6257,
+          "width": 1424,
+          "thumbnail": "001/full/178,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00270/001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00270/001.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00270/001",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6257,
+                "width": 1424
+              }
+            }
+          ]
+        },
+        {
+          "@id": "/clippings/00270/002",
+          "@type": "sc:Canvas",
+          "label": "image 2",
+          "height": 6257,
+          "width": 1273,
+          "thumbnail": "002/full/159,/0/default.jpg",
+          "images": [
+            {
+              "@id": "/clippings/00270/002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/clippings/00270/002.tif",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@id": "/clippings/00270/002",
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "height": 6257,
+                "width": 1273
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
