@@ -21,6 +21,10 @@ module IIIF
       json_data = make_manifest
 
       tiffs = Dir.entries(@clipping_dir).select { |f| f[/^\d+.tif$/] }.sort()
+      if tiffs.length == 0
+        return
+      end 
+
       for tiff in tiffs
         canvas = make_canvas(File.join(@clipping_dir, tiff))
         json_data[:sequences][0][:canvases] << canvas
@@ -32,7 +36,7 @@ module IIIF
     end
 
     def make_manifest
-      puts "generating manifest for #{@clipping.path}"
+      puts "iiif: generating manifest for #{@clipping.path}"
       manifest_uri = @clipping.site.config['baseurl'] + '/tiles/' + @clipping_id + '/manifest.json'
       manifest = {
         "@context": "http://iiif.io/api/presentation/2/context.json",
@@ -62,7 +66,7 @@ module IIIF
       tiff_rgba = tiff.sub '.tif', '-rgba.tif'
       if not File.exists? info_file or File.exists? tiff_rgba
         FileUtils::mkdir_p img_tile_dir
-        puts "creating tiles for #{tiff}"
+        puts "iiif: creating tiles for #{tiff}"
         `tiff2rgba #{tiff} #{tiff_rgba}`
         `iiif_static.py --api-version=2.0 --dst #{img_tile_dir} --tilesize 1024 #{tiff_rgba}`
         File.delete tiff_rgba
@@ -72,7 +76,6 @@ module IIIF
       info = JSON.parse(File.read(info_file))
 
       # determine some urls
-      #base_url = @clipping.site.config['url'] + @clipping.site.config['baseurl']
       base_url = @clipping.site.config['baseurl']
       canvas_url = "#{base_url}/tiles/#{@clipping_id}"
       tiff_url = "#{canvas_url}/#{File.basename(tiff)}"
@@ -143,35 +146,27 @@ end
 # to run generate, even when there are no tiles to generate!
 
 def tiles_dir(site)
-  File.join site.source, '_tiles'
 end
 
 def site_tiles_dir(site)
-  File.join site.dest, 'tiles'
-end
-
-Jekyll::Hooks.register :site, :after_reset do |site|
-  f = site_tiles_dir site
-  if File.symlink? f
-    puts "removing _tiles symlink"
-    File.delete f
-  end
 end
 
 Jekyll::Hooks.register :site, :pre_render do |site|
-  puts "generating manifests/tiles"
+  puts "iiif: generating manifests/tiles"
+  count = 0
   for clipping in site.collections['clippings'].docs
+    count += 1
+    break if count >= 1221
     manifest = IIIF::Manifest.new(clipping)
     manifest.generate
-    break
   end
 end
 
 Jekyll::Hooks.register :site, :post_write do |site|
-  src = tiles_dir site
-  dst = site_tiles_dir site
+  src = File.join site.source, '_tiles'
+  dst = File.join site.dest, 'tiles'
   if not File.symlink? dst
-    puts "adding tiles symlink"
+    puts "iiif: adding tiles symlink"
     FileUtils.symlink src, dst
   end
 end
