@@ -1,60 +1,44 @@
 require 'json'
 require 'jekyll'
 
-module Clipping 
+module IIIF
 
-  class Generator < Jekyll::Generator
+  class Manifest
 
-    def generate(site)
-      coll = site.collections['clippings']
-      new_files = []
+    # Pass in a Jekyll::Page for a clipping to generate. The Jekyll::Hook
+    # registered below will take care of this for all clippings, to make
+    # sure that they all have IIIF manifests and image tiles.
 
-      count = 0
-      for clipping in site.collections['clippings'].docs
-        count += 1
-        break if count >= 824
-        process clipping
-      end
-
-      for file in new_files 
-        coll.docs << Jekyll::Document.new(file, {site: site, collection: coll})
-      end
+    def initialize(clipping)
+      @clipping = clipping
+      @clipping_id = File.basename(File.dirname(clipping.path))
+      @clipping_dir = File.dirname clipping.path
+      @tile_dir = File.join clipping.site.source, '_tiles', @clipping_id
+      @manifest_file = File.join @tile_dir, 'manifest.json'
     end
 
-    def process(clipping)
-      new_files = []
-      manifest = make_manifest clipping
-      clipping_dir = File.dirname clipping.path
-      tiffs = Dir.entries(clipping_dir).select { |f| f[/^\d+.tif$/] }.sort()
+    def generate
+      json_data = make_manifest
+
+      tiffs = Dir.entries(@clipping_dir).select { |f| f[/^\d+.tif$/] }.sort()
       for tiff in tiffs
-        canvas = make_canvas(File.join(clipping_dir, tiff), clipping.url)
-        manifest[:sequences][0][:canvases] << canvas
+        canvas = make_canvas(File.join(@clipping_dir, tiff))
+        json_data[:sequences][0][:canvases] << canvas
       end
 
-      manifest_file = File.join(File.dirname(clipping.path), 'manifest.json')
-      File.open(manifest_file, 'w') do |f|
-        f.write(JSON.pretty_generate(manifest))
+      File.open(@manifest_file, 'w') do |f|
+        f.write(JSON.pretty_generate(json_data))
       end
-
-      clipping.data['javascript'] = [
-        '/js/clipping.js',
-        '/mirador/mirador.js'
-      ]
-      clipping.data['css'] = [
-        '/mirador/css/mirador-combined.css'
-      ]
-
-      return new_files
     end
 
-    def make_manifest(clipping)
-      puts "generating manifest for #{clipping.path}"
-      manifest_uri = clipping.url.sub('index.html', 'manifest.json')
+    def make_manifest
+      puts "generating manifest for #{@clipping.path}"
+      manifest_uri = @clipping.site.config['baseurl'] + '/tiles/' + @clipping_id + '/manifest.json'
       manifest = {
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@id": manifest_uri,
         "@type": "sc:Manifest",
-        "label": "#{clipping.data['title']}",
+        "label": "#{@clipping.data['title']}",
         "attribution": "Foreign Literatures in America",
         "sequences": [
           {
@@ -69,28 +53,38 @@ module Clipping
       return manifest
     end
 
-    def make_canvas(tiff, clipping_url)
+    def make_canvas(tiff)
+      img_seq = File.basename(tiff).sub('.tif', '')
+      img_tile_dir = File.join(@tile_dir, img_seq)
+      info_file = File.join(img_tile_dir, 'info.json')
+
       # only generate tiles if they're not there already
-      tile_dir = tiff.sub('.tif', '')
       tiff_rgba = tiff.sub '.tif', '-rgba.tif'
-      if not Dir.exists? tile_dir or File.exists? tiff_rgba
+      if not File.exists? info_file or File.exists? tiff_rgba
+        FileUtils::mkdir_p img_tile_dir
         puts "creating tiles for #{tiff}"
         `tiff2rgba #{tiff} #{tiff_rgba}`
-        `iiif_static.py --api-version=2.0 --dst #{tile_dir} --tilesize 1024 #{tiff_rgba}`
+        `iiif_static.py --api-version=2.0 --dst #{img_tile_dir} --tilesize 1024 #{tiff_rgba}`
         File.delete tiff_rgba
       end
 
       # read in info.json that was just generated for dimensions
-      info_file = File.join(tile_dir, 'info.json')
       info = JSON.parse(File.read(info_file))
 
-      # determine some relative urls
-      canvas_url = File.dirname(clipping_url)
-      tiff_url = File.join(canvas_url, File.basename(tiff))
-      img_seq = File.basename(tiff).sub('.tif', '')
-      service_url = File.join(canvas_url, img_seq)
-      image_url = File.join(canvas_url, img_seq)
-      thumbnail_url = get_thumbnail(tile_dir)
+      # determine some urls
+      #base_url = @clipping.site.config['url'] + @clipping.site.config['baseurl']
+      base_url = @clipping.site.config['baseurl']
+      canvas_url = "#{base_url}/tiles/#{@clipping_id}"
+      tiff_url = "#{canvas_url}/#{File.basename(tiff)}"
+      service_url = "#{canvas_url}/#{img_seq}"
+      image_url = "#{canvas_url}-#{img_seq}"
+      thumbnail_url = "#{service_url}/#{get_thumbnail(img_tile_dir)}"
+
+      # update image info with full URL
+      info['@id'] = service_url
+      File.open(info_file, 'w') do |f|
+        f.write(JSON.pretty_generate(info))
+      end
 
       canvas = {
         "@id": image_url,
@@ -123,22 +117,61 @@ module Clipping
       return canvas
     end
 
-    def get_thumbnail(tile_dir)
-      full_dir = File.join(tile_dir, "full")
-      full_url = File.join(File.basename(tile_dir), "full")
+    def get_thumbnail(img_tile_dir)
+      full_dir = File.join(img_tile_dir, "full")
 
-      # get largest full image for thumbnail w/ width < 200 
+      # get full image with largest width
       thumb_w = nil
       for dir in Dir.entries(full_dir) 
         next if dir !~ /,$/
         w = dir.to_i
-        if ! thumb_w or (w > thumb_w and w < 200)
+        if ! thumb_w or w > thumb_w
           thumb_w = w
         end
       end
-      thumbnail_url = File.join(full_url, '%s,' % thumb_w, '0', 'default.jpg')
 
-      return thumbnail_url
+      return File.join('full/%s,' % thumb_w, '0', 'default.jpg')
     end
+  end
+
+end
+
+# we jump through some hoops here to build the tiles in a _tiles director
+# and then symlink it into the _site at the end of the build
+# the reason for this is to prevent Jekyll from reading in hundreds of 
+# thousands of image tiles, bloating memory, and taking over an hour 
+# to run generate, even when there are no tiles to generate!
+
+def tiles_dir(site)
+  File.join site.source, '_tiles'
+end
+
+def site_tiles_dir(site)
+  File.join site.dest, 'tiles'
+end
+
+Jekyll::Hooks.register :site, :after_reset do |site|
+  f = site_tiles_dir site
+  if File.symlink? f
+    puts "removing _tiles symlink"
+    File.delete f
+  end
+end
+
+Jekyll::Hooks.register :site, :pre_render do |site|
+  puts "generating manifests/tiles"
+  for clipping in site.collections['clippings'].docs
+    manifest = IIIF::Manifest.new(clipping)
+    manifest.generate
+    break
+  end
+end
+
+Jekyll::Hooks.register :site, :post_write do |site|
+  src = tiles_dir site
+  dst = site_tiles_dir site
+  if not File.symlink? dst
+    puts "adding tiles symlink"
+    FileUtils.symlink src, dst
   end
 end

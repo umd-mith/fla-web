@@ -3,3 +3,4 @@ _site
 *.tif
 .jekyll-metadata
 _clippings/**.jpg
+_tiles

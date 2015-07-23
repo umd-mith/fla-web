@@ -7,7 +7,7 @@ description: >
   literary works, as well as immigrant authored literary works, in 
   the U.S. throughout U.S. history.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://ec2-52-7-99-163.compute-1.amazonaws.com"
 
 collections:
   authors:
@@ -15,7 +15,19 @@ collections:
   clippings:
     output: true
 
-exclude: ['**/*.tif'] # '_clippings/**/default.jpg']
+defaults:
+  - 
+    scope: 
+      path: "clippings"
+    values:
+      javascript:
+        - /mirador/mirador.js
+        - /js/clipping.js
+      css:
+        - /mirador/css/mirador-combined.css
+
+exclude: ['**/*.tif']
+keep_files: ['tiles']
 
 sass:
   sass_dir: bower_components/bootstrap-sass/assets/stylesheets

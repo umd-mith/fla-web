@@ -1,7 +1,8 @@
 $(function() {
 
-  manifestUri = window.location.pathname.replace(/(index.html|#.+)/, '');
-  manifestUri += 'manifest.json'
+  var loc = window.location;
+  var imageId = loc.href.match(/clippings\/(\d+)\//)[1]
+  var manifestUri = '/tiles/' + imageId + '/manifest.json';
   console.log(manifestUri);
 
   Mirador({

@@ -25,7 +25,7 @@ $font-size-base: 12pt;
     clear: both;
     border: thin solid #999;
     padding: 10px;
-    min-height: 230px;
+    min-height: 430px;
 }
 
 .clipping img {
@@ -44,6 +44,6 @@ $font-size-base: 12pt;
 
 .scrollable-menu {
     height: auto;
-    max-height: 200px;
+    max-height: 400px;
     overflow-x: hidden;
 }
