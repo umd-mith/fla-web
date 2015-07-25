@@ -153,10 +153,7 @@ end
 
 Jekyll::Hooks.register :site, :pre_render do |site|
   puts "iiif: generating manifests/tiles"
-  count = 0
   for clipping in site.collections['clippings'].docs
-    count += 1
-    break if count >= 1221
     manifest = IIIF::Manifest.new(clipping)
     manifest.generate
   end

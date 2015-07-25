@@ -8,6 +8,7 @@ description: >
   the U.S. throughout U.S. history.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ec2-52-7-99-163.compute-1.amazonaws.com"
+tiles_url: "http://mith-fla-tiles.s3.amazonaws.com"
 
 collections:
   authors:
