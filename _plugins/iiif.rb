@@ -5,7 +5,7 @@ module IIIF
 
   class Manifest
 
-    # Pass in a Jekyll::Page for a clipping to generate. The Jekyll::Hook
+    # Pass in a Jekyll::Page for a clipping to generate. The Jekyll hooks
     # registered below will take care of this for all clippings, to make
     # sure that they all have IIIF manifests and image tiles.
 
