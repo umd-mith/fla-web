@@ -145,12 +145,6 @@ end
 # thousands of image tiles, bloating memory, and taking over an hour 
 # to run generate, even when there are no tiles to generate!
 
-def tiles_dir(site)
-end
-
-def site_tiles_dir(site)
-end
-
 Jekyll::Hooks.register :site, :pre_render do |site|
   puts "iiif: generating manifests/tiles"
   for clipping in site.collections['clippings'].docs
