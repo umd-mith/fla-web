@@ -1,0 +1,20 @@
+---
+layout: page
+title: Authors
+javascript:
+- /bower_components/masonry/dist/masonry.pkgd.min.js
+- /bower_components/imagesloaded/imagesloaded.pkgd.min.js
+- /bower_components/modernizr/modernizr.js
+- /js/people.js
+---
+  <div class="grid effect-3" id="people-grid">
+    {% for person in site.people %}
+    {% if person.url != "/people/index.html" and person.image %}
+    <div class="grid-item">
+      <a href="{{ person.url }}">
+        <img width="200" src="/people/{{ person.slug }}/{{ person.image }}" title="{{ person.label }}" alt="{{ person.label }}">
+      </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>

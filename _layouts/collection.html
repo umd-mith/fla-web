@@ -4,17 +4,17 @@ javascript:
 - /bower_components/masonry/dist/masonry.pkgd.min.js
 - /bower_components/imagesloaded/imagesloaded.pkgd.min.js
 - /bower_components/modernizr/modernizr.js
-- /js/authors.js
+- /js/people.js
 ---
 
 <div class="row">
   <div class="col-sm-offset-1 col-sm-10">
     <h3 class="text-center">{{ page.title }}</h3>
     <div class="grid effect-3" id="author-grid">
-      {% for author in page.featured_authors %}
+      {% for person in page.featured_people %}
       <div class="grid-item">
-        <a href="/authors/{{ author }}/">
-          <img width="200" src="/authors/{{ author }}/index.jpg">
+        <a href="/people/{{ person }}/">
+          <img width="200" src="/people/{{ person }}/index.jpg">
         </a>
       </div>
       {% endfor %}

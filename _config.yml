@@ -11,7 +11,7 @@ url: "http://fla.inkdroid.org"
 tiles_url: "http://mith-fla-tiles.s3.amazonaws.com"
 
 collections:
-  authors:
+  people:
     output: true
   clippings:
     output: true
