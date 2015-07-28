@@ -140,25 +140,10 @@ module IIIF
 
 end
 
-# we jump through some hoops here to build the tiles in a _tiles director
-# and then symlink it into the _site at the end of the build
-# the reason for this is to prevent Jekyll from reading in hundreds of 
-# thousands of image tiles, bloating memory, and taking over an hour 
-# to run generate, even when there are no tiles to generate!
-
 Jekyll::Hooks.register :site, :pre_render do |site|
   puts "iiif: generating manifests/tiles"
   for clipping in site.collections['clippings'].docs
     manifest = IIIF::Manifest.new(clipping)
     manifest.generate
-  end
-end
-
-Jekyll::Hooks.register :site, :post_write do |site|
-  src = File.join site.source, '_tiles'
-  dst = File.join site.dest, 'tiles'
-  if not File.symlink? dst
-    puts "iiif: adding tiles symlink"
-    FileUtils.symlink src, dst
   end
 end
