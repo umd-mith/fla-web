@@ -22,13 +22,13 @@ module IIIF
     def generate
       json_data = make_manifest
 
-      tiffs = Dir.entries(@clipping_dir).select { |f| f[/^\d+.tif$/] }.sort()
+      tiffs = Dir.entries(@tiles_dir).select { |f| f[/^\d+.tif$/] }.sort()
       if tiffs.length == 0
         return
       end 
 
       for tiff in tiffs
-        canvas = make_canvas(File.join(@clipping_dir, tiff))
+        canvas = make_canvas(File.join(@tiles_dir, tiff))
         json_data[:sequences][0][:canvases] << canvas
       end
 
