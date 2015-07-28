@@ -5,6 +5,7 @@
 rm -rf _site
 jekyll build
 cd _site
+echo "fla.inkdroid.org" >> CNAME
 git init
 git config user.name "Ed Summers"
 git config user.email "ehs@pobox.com"
