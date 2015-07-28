@@ -1,0 +1,16 @@
+language: ruby
+
+install:
+- bundle install
+
+script:
+- ./deploy.sh
+
+branches:
+  only:
+    - master
+
+env:
+    - secure: "FOV/pUcvT8zaOVdbXiznRL6fKKEXG76BYPucX4jmZvCNmPYPEfDtXhWpHXTY/VnAUGiYt9KuZphsCmBIqCm+8F+tiKj+MP2uNe7KoMIv0spI4hI3XRZXq9atAuBJIabuizyMyBPSwm3bUxBl4uaIGO39l5u75aCOA1ps10FyKOLJdv6eH69Xvd4yUaYHPf+lvKpd5CCicFMyv3O/k9Px42h000XQ0DkJbm0od0bfSCcvf04eLziOlZpFx2zbfe4CIjfCtd26WCYspNixOL6jjSRkpclTTprcX7NPWhmp88Bac7/z/6o//a3JcxqZauph+Wnvr5uonTWD0Xu0o8fBMi2xgYaZUBSbp2zOnika8aIVvuj/pc1MkZxGa0q6+UNYLRueeR7ws5UPQy5QWaPTXw8No4Z8sA+/R3oOcQEMNBx+/ZVW2g3MUn2ucmgBZgmghI8mALV/aspEJo6jTpnlyx/mFWpcQDQQjkyGmzIOEDcpsu3dEjytUX6D8avrpUzM8eg9LT6mojWuQ8dx8lrzC0R46XVoX5R0aGsnD5Qwigw4CmnUT8KtSJP94gUlXkS26kPAGUcP1RcI/o6tRqJ3mAfZhe/D79v1kfzl8PIdBErrLzHPRGpVpjtXtGr6ABaGa8wAEqazHeUzi+4Uhb13OWvzo+R5JgyQ9sbyKbhd2uY="
+
+
