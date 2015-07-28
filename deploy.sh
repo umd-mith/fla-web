@@ -3,7 +3,7 @@
 # build jekyll site and deploy to gh-pages
 
 rm -rf _site
-jekyll build
+jekyll build --safe
 cd _site
 echo "fla.inkdroid.org" >> CNAME
 git init
