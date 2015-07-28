@@ -2,7 +2,7 @@ $(function() {
 
   var loc = window.location;
   var imageId = loc.href.match(/clippings\/(\d+)\//)[1]
-  var manifestUri = '/tiles/' + imageId + '/manifest.json';
+  var manifestUri = 'http://mith-fla-tiles.s3.amazonaws.com/' + imageId + '/manifest.json';
   console.log(manifestUri);
 
   Mirador({

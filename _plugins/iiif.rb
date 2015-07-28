@@ -12,9 +12,11 @@ module IIIF
     def initialize(clipping)
       @clipping = clipping
       @clipping_id = File.basename(File.dirname(clipping.path))
+      @clipping_url = File.join clipping.site.config['url'], clipping.site.config['baseurl'], @clipping_id
       @clipping_dir = File.dirname clipping.path
-      @tile_dir = File.join clipping.site.source, '_tiles', @clipping_id
-      @manifest_file = File.join @tile_dir, 'manifest.json'
+      @tiles_dir = File.join clipping.site.source, '_tiles', @clipping_id
+      @tiles_url = File.join clipping.site.config['tiles_url'], @clipping_id
+      @manifest_file = File.join @tiles_dir, 'manifest.json'
     end
 
     def generate
@@ -37,7 +39,7 @@ module IIIF
 
     def make_manifest
       puts "iiif: generating manifest for #{@clipping.path}"
-      manifest_uri = @clipping.site.config['baseurl'] + '/tiles/' + @clipping_id + '/manifest.json'
+      manifest_uri = File.join @tiles_url, 'manifest.json'
       manifest = {
         "@context": "http://iiif.io/api/presentation/2/context.json",
         "@id": manifest_uri,
@@ -59,16 +61,16 @@ module IIIF
 
     def make_canvas(tiff)
       img_seq = File.basename(tiff).sub('.tif', '')
-      img_tile_dir = File.join(@tile_dir, img_seq)
-      info_file = File.join(img_tile_dir, 'info.json')
+      img_tiles_dir = File.join(@tiles_dir, img_seq)
+      info_file = File.join(img_tiles_dir, 'info.json')
 
       # only generate tiles if they're not there already
       tiff_rgba = tiff.sub '.tif', '-rgba.tif'
       if not File.exists? info_file or File.exists? tiff_rgba
-        FileUtils::mkdir_p img_tile_dir
+        FileUtils::mkdir_p img_tiles_dir
         puts "iiif: creating tiles for #{tiff}"
         `tiff2rgba #{tiff} #{tiff_rgba}`
-        `iiif_static.py --api-version=2.0 --dst #{img_tile_dir} --tilesize 1024 #{tiff_rgba}`
+        `iiif_static.py --api-version=2.0 --dst #{img_tiles_dir} --tilesize 1024 #{tiff_rgba}`
         File.delete tiff_rgba
       end
 
@@ -76,12 +78,11 @@ module IIIF
       info = JSON.parse(File.read(info_file))
 
       # determine some urls
-      base_url = @clipping.site.config['baseurl']
-      canvas_url = "#{base_url}/tiles/#{@clipping_id}"
-      tiff_url = "#{canvas_url}/#{File.basename(tiff)}"
-      service_url = "#{canvas_url}/#{img_seq}"
+      canvas_url = @clipping_url
+      tiff_url = File.join canvas_url, File.basename(tiff)
+      service_url = File.join @tiles_url, img_seq
       image_url = "#{canvas_url}-#{img_seq}"
-      thumbnail_url = "#{service_url}/#{get_thumbnail(img_tile_dir)}"
+      thumbnail_url = File.join service_url, get_thumbnail(img_tiles_dir)
 
       # update image info with full URL
       info['@id'] = service_url
@@ -120,8 +121,8 @@ module IIIF
       return canvas
     end
 
-    def get_thumbnail(img_tile_dir)
-      full_dir = File.join(img_tile_dir, "full")
+    def get_thumbnail(img_tiles_dir)
+      full_dir = File.join(img_tiles_dir, "full")
 
       # get full image with largest width
       thumb_w = nil
