@@ -80,7 +80,7 @@ module IIIF
 
       # determine some urls
       canvas_url = @clipping_url
-      tiff_url = File.join canvas_url, File.basename(tiff)
+      tiff_url = File.join @tiles_url, File.basename(tiff)
       service_url = File.join @tiles_url, img_seq
       image_url = "#{canvas_url}-#{img_seq}"
       thumbnail_url = File.join service_url, get_thumbnail(img_tiles_dir)
