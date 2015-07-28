@@ -1,12 +1,12 @@
 language: ruby
-rvm: 
-- 2.2.2
 
-install:
-- bundle install
+rvm: 2.2.2
 
-script:
-- ./deploy.sh
+cache: bundler
+
+install: bundle install
+
+script: ./deploy.sh
 
 branches:
   only:
