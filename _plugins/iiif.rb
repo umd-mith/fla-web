@@ -21,6 +21,7 @@ module IIIF
 
     def generate
       json_data = make_manifest
+      return if not Dir.exists? @tiles_dir
 
       tiffs = Dir.entries(@tiles_dir).select { |f| f[/^\d+.tif$/] }.sort()
       if tiffs.length == 0

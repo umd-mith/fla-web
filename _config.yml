@@ -27,7 +27,7 @@ defaults:
       css:
         - /mirador/css/mirador-combined.css
 
-exclude: ['**/*.tif']
+exclude: ['**/*.tif', 'deploy.sh', 'bower.json', 'Gemfile', 'Gemfile.lock', 'CNAME']
 keep_files: ['tiles']
 
 sass:
