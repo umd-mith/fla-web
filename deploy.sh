@@ -13,4 +13,4 @@ git remote add origin "https://$GH_TOKEN@github.com/umd-mith/fla-web.git"
 git checkout -b gh-pages
 git add .
 git commit -m "Deploy to GitHub Pages"
-git push --force origin gh-pages
+git push --force --quiet origin gh-pages
