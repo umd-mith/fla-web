@@ -5,6 +5,9 @@ module IIIF
 
   class Manifest
 
+    attr_reader :clipping_url, :manifest_url
+
+
     # Pass in a Jekyll::Page for a clipping to generate. The Jekyll hooks
     # registered below will take care of this for all clippings, to make
     # sure that they all have IIIF manifests and image tiles.
@@ -17,6 +20,7 @@ module IIIF
       @tiles_dir = File.join clipping.site.source, '_tiles', @clipping_id
       @tiles_url = File.join clipping.site.config['tiles_url'], @clipping_id
       @manifest_file = File.join @tiles_dir, 'manifest.json'
+      @manifest_url = File.join @tiles_url, 'manifest.json'
     end
 
     def generate
@@ -38,14 +42,19 @@ module IIIF
       end
     end
 
+    def label 
+      d = @clipping.data
+      l = d['title']
+      l += '. ' + d['author'] if d['author'] != ''
+      l
+    end
+
     def make_manifest
-      puts "iiif: generating manifest for #{@clipping.path}"
-      manifest_uri = File.join @tiles_url, 'manifest.json'
       manifest = {
         "@context": "http://iiif.io/api/presentation/2/context.json",
-        "@id": manifest_uri,
+        "@id": @manifest_url,
         "@type": "sc:Manifest",
-        "label": "#{@clipping.data['title']}",
+        "label": label,
         "attribution": "Foreign Literatures in America",
         "sequences": [
           {
@@ -143,8 +152,34 @@ end
 
 Jekyll::Hooks.register :site, :pre_render do |site|
   puts "iiif: generating manifests/tiles"
+
+  coll_url = File.join site.config['tiles_url'], 'collection.json'
+  coll = {
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": coll_url,
+    "@type": "sc:Collection",
+    "label": "Foreign Literatures in America",
+    "description": "These manifests are for items scanned as part of the FLA project.",
+    "attribution": "University of Maryland",
+    "manifests": []
+  }
+
+  puts coll
+
   for clipping in site.collections['clippings'].docs
     manifest = IIIF::Manifest.new(clipping)
     manifest.generate
+    coll[:manifests] << {
+      "@id": manifest.manifest_url,
+      "@type": "sc:Manifest",
+      "label": manifest.label
+    }
+    puts manifest.manifest_url
   end
+
+  coll_file = File.join clipping.site.source, '_tiles', 'collection.json'
+  File.open(coll_file, 'w') do |f|
+    f.write(JSON.pretty_generate(coll))
+  end
+
 end
