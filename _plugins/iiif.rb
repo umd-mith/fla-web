@@ -164,8 +164,6 @@ Jekyll::Hooks.register :site, :pre_render do |site|
     "manifests": []
   }
 
-  puts coll
-
   for clipping in site.collections['clippings'].docs
     manifest = IIIF::Manifest.new(clipping)
     manifest.generate
@@ -174,7 +172,6 @@ Jekyll::Hooks.register :site, :pre_render do |site|
       "@type": "sc:Manifest",
       "label": manifest.label
     }
-    puts manifest.manifest_url
   end
 
   coll_file = File.join clipping.site.source, '_tiles', 'collection.json'
