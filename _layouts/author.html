@@ -1,5 +1,7 @@
 ---
 layout: page
+javascript:
+- /js/sort.js
 ---
 
 <div class="row">
@@ -13,7 +15,7 @@ layout: page
 
     <h3>Resources</h3>
 
-    <ul>
+    <ul class="sortable">
       {% for clipping in site.clippings %}{% for subject in clipping.subjects %}{% if page.label == subject %}<li>{% include preview.html clipping=clipping %}</li>{% endif %}{% endfor %}{% endfor %}
     </ul>
 

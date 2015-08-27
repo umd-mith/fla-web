@@ -1,6 +1,6 @@
 <article>
-  <a href="{{ include.clipping.url }}">{{ include.clipping.title }}</a>.
   {% if include.clipping.author != '' %}{{ include.clipping.author }}. {% endif %}
+  <a href="{{ include.clipping.url }}">{{ include.clipping.title }}</a>.
   {% if include.clipping.publication != '' %}{{ include.clipping.publication }}, {% endif %}
   {% if include.clipping.year != '' %}{{ include.clipping.year }},{% endif %}
   {% if include.clipping.pages != '' %}{{ include.clipping.pages }}{% endif %}.
