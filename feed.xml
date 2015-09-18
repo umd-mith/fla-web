@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FLA</title>
+    <description>Foreign Literatures in America (FLA) is a project devoted to the  recovery and understanding of the significance of foreign authored  literary works, as well as immigrant authored literary works, in  the U.S. throughout U.S. history.
+</description>
+    <link>http://www.flaproject.com/</link>
+    <atom:link href="http://www.flaproject.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 18 Sep 2015 18:50:23 +0000</pubDate>
+    <lastBuildDate>Fri, 18 Sep 2015 18:50:23 +0000</lastBuildDate>
+    <generator>Jekyll v3.0.0.pre.beta8</generator>
+    
+  </channel>
+</rss>
